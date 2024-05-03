@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.4.6.2/css/bootstrap.css">
+    <script src="bootstrap.4.6.2/assets/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap.4.6.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="crott.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid bg-white">
+        <ul>
+            <li>Wawtf</li>
+            <li class="crott">jquery tidak penting</li>
+        </ul>
+        <h1>crott</h1>
+    </div>
+
+    <h1>
+        Belajar bootstrap
+    </h1>
+
+    <h1 class="text-warning">
+        18+ www.nekopai.com
+    </h1>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit cupiditate, esse praesentium harum, mollitia vero sunt sapiente, corrupti sed deserunt quod tempore autem commodi nesciunt laborum placeat nostrum magni nihil.
+            </p>
+        </div>
+        <div class="col-lg-3 col-md-">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique earum, suscipit assumenda praesentium aperiam consequuntur aliquam, ex consectetur excepturi nisi labore voluptatibus rem quam molestiae harum, illo ea numquam vero.
+            </p>
+        </div>
+        <div class="col-lg-3 col-md-">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quisquam ex distinctio tenetur eveniet autem, error eaque magni numquam magnam harum, molestias, iste dignissimos assumenda non sunt ipsam sapiente tempora!
+            </p>
+        </div>
+        <div class="col-lg-3 col-md-">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quisquam ex distinctio tenetur eveniet autem, error eaque magni numquam magnam harum, molestias, iste dignissimos assumenda non sunt ipsam sapiente tempora!
+            </p>
+        </div>
+
+    </div>
+
+    
+    <div class="container">
+        <div class="alert alert-success crott1 p-3 ">
+            <strong>Success!</strong> crott.
+        </div>
+          
+        <h2 class="p-3">Table tidak penting</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody class="value">
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button type="button" class="btn btn-primary add">add name</button>
+
+      </div>
+      
+
+
+    <script>
+        penting = document.querySelector('.crott');
+        penting.addEventListener('click', () => {
+            console.log(penting.innerHTML)
+            if (penting.textContent == 'memang tidak penting') {
+                penting.textContent = 'jquery tidak penting'
+            } else {
+                penting.textContent = 'memang tidak penting'
+            }
+        });
+
+        function tempat() {
+            place = document.querySelector('.value');
+            console.log(place)
+
+        }
+
+        document.querySelector('.add').addEventListener('click', () => {
+            console.log('tffs');
+
+            let value1 = prompt("sembarang boss", "crott");
+            let value2 = prompt("sembarang boss", "crott");
+            let value3 = prompt("sembarang boss", "crott");
+
+            let tr =document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+
+            td1.textContent = value1;
+            td2.textContent = value2;
+            td3.textContent = value3;
+
+            tr.append(td1);
+            tr.append(td2);
+            tr.append(td3);
+
+            place = document.querySelector('.value');
+            console.log(place)
+
+            place.append(tr);
+
+            let notif = document.querySelector('.crott1');
+
+            notif.style.display = 'inline'
+
+            
+        });
+
+</script>
+</body>
+</html>
